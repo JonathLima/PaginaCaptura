@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(12, 12, 12);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(17, 190, 243);
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+section {
+    padding: 20px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5a/Congressos._Semin%C3%A1rios._Palestras_%2830267003810%29.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer {
+    max-width: 230px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 10px;
+    padding: 20px;
+    float: right;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: rgb(17, 190, 243);
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input:hover{
+    background-color: rgb(7, 139, 179);
+    color: white;
+    transition-duration: 0.1s;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../images/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+    background-size: 18px;
+}
+
+footer {
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 40px;
+}
+
+.picture {
+    width: 200px;
+}
+
+.description {
+    display: inline-block;
+    margin-left: 40px;
+    position: relative;
+    bottom: 50px;
+    text-align: left;
+    color: white;
+    max-width: 40%;
+}
+
+.description p, .description h3 {
+    margin-bottom: 20px;
+}
+
+.description h3 {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+    section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+
+ 
+    footer {
+       
+        text-align: center;
+    }
+    .description {
+        display: inline-block;
+        align-content: center;
+        top:10px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 620px) {
+    section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+
+    .picture {
+        float: none;
+        display: flex;
+    }
+    footer {
+        float: none;
+        text-align: center;
+    }
+    .description {
+        display: inline;
+        float: none;
+        text-align: center;
+        top: 20px; 
+        
+    }
+
+    .formContainer {
+        float: none;
+    }
+}
